@@ -8,6 +8,7 @@
   <!--Source: https://www.w3schools.com/tags/tag_meta.asp -->
     <meta charset="UTF-8">
     <meta name="description" content="Small Business Website Template Contact Page">
+    <meta name="keywords" content="Small Business, Contact Page, HTML, CSS">
     <meta name="author" content="David Jordan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -22,6 +23,7 @@
       <li><a href="https://djorda83.github.io/djorda83/">Home</a></li>
       <li><a href="https://djorda83.github.io/djorda83/about.html">About</a></li>
       <li><a href="">Contact</a></li>
+      <li><a href="https://djorda83.github.io/djorda83/jobs.html">Jobs</a></li>
       <li><a href="https://djorda83.github.io/djorda83/services.html">Services</a></li>
       <li><a href="https://djorda83.github.io/djorda83/sitemap.html">Sitemap</a></li>
       <li><a href="https://djorda83.github.io/djorda83/testimonials.html">Testimonials</a></li>
@@ -31,21 +33,27 @@
     <!--Source: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto-->
     <p style="font-size: 20px;">Email: <a href="mailto:ExampleBusinessTemplate@example.com"> ExampleBusinessTemplate@example.com</a></p>
     <p style="font-size: 20px; text-align: left;">If you would like to contact Small Business Company, please do so below! We would love to hear your feedback! Fields marked with * are required.</p>
-    
+
+    <!--Source: https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email-->
     <!--
     Source:https://www.w3schools.com/html/html_forms.asp
     Source:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit-->
-    <form style="text-align: left">
-      <label for="first">First name:*</label><br>
-      <input type="text" id="first" name="first" value=""><br>
-      <label for="last">Last name:*</label><br>
-      <input type="text" id="last" name="last" value=""><br>
-      <label for="email">Email:*</label><br>
-      <input type="text" id="email" name="email" value=""><br>
-      <label for="phone">Phone:</label><br>
-      <input type="text" id="phone" name="phone" value=""><br>
-      <input type="submit" />
-    </form>
+    <form action="mailto:djorda83@students.kennesaw.edu"
+    method="POST"
+    enctype="multipart/form-data"
+    name="EmailForm">
+        Name:*<br>
+        <input type="text" size="19" name="Contact-Name"><br><br>
+        Email:*<br>
+        <input type="email" name="Contact-Email"><br><br> 
+        Phone Number:<br>
+      <input type="email" name="Contact-Phone"><br><br> 
+        Message:*<br> 
+        <textarea name="Contact-Message" rows="6″ cols="20″>
+        </textarea><br><br> 
+        <button type="submit" value="Submit">Send</button>
+    </form>  
+    
     
     <!--
     Source:https://www.w3schools.com/tags/tag_footer.asp-->
